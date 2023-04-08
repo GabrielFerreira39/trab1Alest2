@@ -1,13 +1,32 @@
 import java.io.File;
+import java.util.*;
 import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) throws Exception {
         Scanner sc = new Scanner(new File("src/teste.txt"));
+        ArrayList<String> text = new ArrayList<>();
         while (sc.hasNextLine()) {
-            System.out.println(sc.nextLine());
-
+            text.add(sc.nextLine());
         }
+
+        // for (int i = 0; i < text.size(); i++) {
+        // System.out.println(text.get(i));
+        // }
+        String firstLine = text.get(0);
+
+        List<String> test = Arrays.asList(firstLine.split(" "));
+        int turns = Integer.parseInt(test.get(1));
+        System.out.println(turns);
+
+        String fourthLine = text.get(4);
+        System.out.println(fourthLine);
+        List<String> monkey = Arrays.asList(fourthLine.split(" "));
+        int monkeyNumber = Integer.parseInt(monkey.get(1));
+        System.out.println(monkeyNumber);
+
+        int monkeyTarget = Integer.parseInt(monkey.get(7));
+        System.out.println(monkeyTarget);
 
     }
 }
