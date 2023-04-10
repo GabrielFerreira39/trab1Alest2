@@ -1,15 +1,14 @@
 public class Macaquinho {
     private int id;
     private int qtdCocos;
-    private int par;
-    private int impar;
+    private int amigoPar;
+    private int amigoImpar;
 
-    public Macaquinho(int id, int qtdCocos, int par, int impar) {
+    public Macaquinho(int id, int qtdCocos, int amigoPar, int amigoImpar) {
         this.id = id;
         this.qtdCocos = qtdCocos;
-        this.par = par;
-        this.impar = impar;
-
+        this.amigoPar = amigoPar;
+        this.amigoImpar = amigoImpar;
     }
 
     public int getId() {
@@ -28,20 +27,20 @@ public class Macaquinho {
         this.qtdCocos = qtdCocos;
     }
 
-    public int getPar() {
-        return this.par;
+    public int getAmigoPar() {
+        return this.amigoPar;
     }
 
-    public void setPar(int par) {
-        this.par = par;
+    public void setAmigoPar(int amigoPar) {
+        this.amigoPar = amigoPar;
     }
 
-    public int getImpar() {
-        return this.impar;
+    public int getAmigoImpar() {
+        return this.amigoImpar;
     }
 
-    public void setImpar(int impar) {
-        this.impar = impar;
+    public void setAmigoImpar(int amigoImpar) {
+        this.amigoImpar = amigoImpar;
     }
 
 }
