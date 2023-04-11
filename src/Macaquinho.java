@@ -43,4 +43,11 @@ public class Macaquinho {
         this.amigoImpar = amigoImpar;
     }
 
+    // @Override
+    // public static String toString() {
+    // return "Macaquinho " + id +
+    // " amigoPar -> " + amigoPar +
+    // " amigoImpar -> " + amigoImpar +
+    // " quantidade de cocos -> " + qtdCocos;
+    // }
 }
