@@ -12,8 +12,8 @@ public class App {
 
         String linhaUm = texto.get(0);
 
-        List<String> arrayLinhaUm = Arrays.asList(linhaUm.split(" "));
-        int turnos = Integer.parseInt(arrayLinhaUm.get(1));
+        String[] arrayLinhaUm = (linhaUm.split(" "));
+        int turnos = Integer.parseInt(arrayLinhaUm[1]);
 
         for (int i = 1; i < texto.size(); i++) {
             String linhaString = texto.get(i);
