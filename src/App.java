@@ -19,11 +19,11 @@ public class App {
             String linhaString = texto.get(i);
             List<String> macacoDados = Arrays.asList(linhaString.split(" "));
             int macacoId = Integer.parseInt(macacoDados.get(1));
-            int macacoPar = Integer.parseInt(macacoDados.get(4));
-            int macacoImpar = Integer.parseInt(macacoDados.get(7));
+            int amigoPar = Integer.parseInt(macacoDados.get(4));
+            int amigoImpar = Integer.parseInt(macacoDados.get(7));
             int qtdCocos = Integer.parseInt(macacoDados.get(9));
 
-            Macaquinho macaquinho = new Macaquinho(macacoId, macacoPar, macacoImpar, qtdCocos);
+            Macaquinho macaquinho = new Macaquinho(macacoId, amigoPar, amigoImpar, qtdCocos);
             macaquinhos.add(macaquinho);
 
         }
